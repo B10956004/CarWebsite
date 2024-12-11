@@ -1,0 +1,207 @@
+.navbar-brand {
+  color: #27ba63 !important;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: gray !important;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2; /* 確保按鈕在最上層 */
+}
+
+/* 固定內容樣式 */
+.fixed-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%; /* 讓內容橫向完全覆蓋 */
+  padding: 20px; /* 增加內邊距以避免內容緊貼邊緣 */
+  text-align: center; /* 確保文字內容居中 */
+  color: white; /* 確保文字可讀性 */
+}
+
+/* 輪播背景圖片 */
+.carousel-bg {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 將整個 header 定義為相對定位，方便內容與圖片疊加 */
+header {
+  position: relative;
+  height: 600px;
+}
+
+/* 確保輪播圖覆蓋整個區域 */
+.carousel-inner {
+  height: 100%;
+}
+
+a {
+  display: block;
+}
+
+.align-container {
+  max-width: 100%; /* 容器寬度最大為父元素寬度 */
+  min-width: 300px; /* 最小寬度設置為300px */
+  box-sizing: border-box;
+  height: 350px;
+}
+.align-container p {
+  display: flex; /* 使用 Flexbox */
+  align-items: center; /* 垂直靠上 */
+  justify-content: center; /* 水平居中 (如果需要的話) */
+  height: 100%; /* 確保 <p> 填滿父容器高度 */
+  margin: 0; /* 取消 <p> 的預設外邊距 */
+}
+h2 {
+  font-weight: bold;
+}
+.custom-icon {
+  font-size: 60px;
+}
+.map-container {
+  position: relative;
+  width: 100%; /* 讓容器寬度自適應 */
+  padding-bottom: 75%; /* 高度比例，根據需要調整 */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tel-button {
+  min-width: 200px;
+  max-width: 80%;
+  background-color: #27ba63;
+  border: 2px solid #27ba63;
+  color: #fff;
+  border-radius: 100px;
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.6em 2.5em;
+  transition: 0.2s ease-out all;
+  font-size: 120%;
+  text-decoration: none;
+}
+.tel-button:hover {
+  background-color: #fff;
+  color: #27ba63;
+}
+
+.step-card {
+  background-color: #2a2a2a; /* 預設灰底 */
+  transition: background-color 0.3s ease; /* 平滑過渡效果 */
+  color: white;
+  font-weight: bolder;
+  max-width: 100%; /* 容器寬度最大為父元素寬度 */
+  min-width: 300px; /* 最小寬度設置為300px */
+  box-sizing: border-box;
+  height: 350px;
+}
+
+.step-card:hover {
+  background-color: #27ba63; /* hover時變色為綠色 */
+}
+
+.step-card .card-body {
+  text-align: center; /* 讓卡片內容置中 */
+}
+/* 圓形外框 */
+.step-title {
+  display: inline-block;
+  padding: 50px; /*根據需要調整內邊距來控制圓形的大小 */
+  background-color: #a8a8a8; /* 設置圓形背景色 */
+  color: white; /* 設置文字顏色 */
+  border-radius: 50%; /* 使其變為圓形 */
+  font-size: 60px; /* 可以根據需要調整字體大小 */
+  text-align: center; /* 文字置中 */
+  width: 175px;
+  height: 175px;
+}
+.step-card:hover .step-title {
+  background-color: white; /* 設置圓形背景色 */
+  color: #2a2a2a; /* 設置文字顏色 */
+}
+.steps p,
+.recycle p,
+.services p {
+  font-size: x-large;
+}
+footer {
+  padding-top: 1.5rem !important;
+  position: relative;
+  background-color: rgba(73, 73, 73, 0.2);
+}
+.copy-right {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+footer .row {
+  display: flex;
+  justify-content: space-between; /* 在欄位間分散對齊 */
+}
+footer .col-md-4 {
+  display: flex;
+  flex-direction: column; /* 確保每一欄的內容垂直排列 */
+  align-items: start; /* 讓內容靠左對齊 */
+}
+
+.floating-btn-group {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  gap: 10px; /* 按鈕之間的間距 */
+  z-index: 1000;
+  font-size: 30px;
+}
+/* 按鈕基礎樣式 */
+.floating-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #27ba63;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* 懸浮效果 */
+.floating-btn:hover {
+  background-color: #1f9a52; /* 按鈕懸浮時的顏色 */
+  transform: scale(1.1); /* 放大效果 */
+}
+#contact i {
+  font-size: larger;
+}

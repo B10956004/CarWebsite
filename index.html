@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>永慶汽車環保有限公司</title>
+    <link rel="icon" href="assets/card.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/15d8847869.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white sticky-top">
+      <div class="container">
+        <a href="#"><img src="assets/card.jpg" style="width: 55px" /></a>
+        <a class="navbar-brand" href="#">永慶汽車環保有限公司</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                服務項目
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">收購報廢汽、機車</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">事故車/欠稅車</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">中古車/中古車零件買賣</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">24H道路救援</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">收購報廢汽、機車</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">事故車/欠稅車</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">中古車/中古車零件買賣</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">24H道路救援</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 橫幅區塊 -->
+    <header class="text-white text-center">
+      <!-- 固定不變的內容 -->
+      <div class="fixed-content">
+        <h1>永慶汽車環保有限公司</h1>
+        <p class="lead">快速、安全、專業的回收服務</p>
+        <a class="tel-button" href="tel:+88689330033"
+          ><i class="fa-solid fa-phone-volume"></i> 089-330033</a
+        >
+      </div>
+      <!-- 背景圖片輪播 -->
+      <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- 第一張圖片 -->
+          <div class="carousel-item active">
+            <div
+              class="carousel-bg"
+              style="background-image: url('assets/truck.jpg')"
+            ></div>
+          </div>
+          <!-- 第二張圖片 -->
+          <div class="carousel-item">
+            <div
+              class="carousel-bg"
+              style="background-image: url('assets/truck2.jpg')"
+            ></div>
+          </div>
+          <!-- 第三張圖片 -->
+          <div class="carousel-item">
+            <div
+              class="carousel-bg"
+              style="background-image: url('assets/car.jpg')"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- 左右滑動按鈕 -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#headerCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">上一張</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#headerCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">下一張</span>
+      </button>
+    </header>
+
+    <!-- 服務區塊 -->
+    <section id="services" class="py-5 services">
+      <div class="container text-center">
+        <h2 class="mb-4">我們的服務</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="p-4 border rounded align-container">
+              <h2>快速評估</h2>
+              <p>提供即時報價服務，專人估價。</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded align-container">
+              <h2>24H道路救援</h2>
+              <p>道路救援專家，全年無休，安心出行的保障！</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded align-container">
+              <h2>即時付款</h2>
+              <p>交易完成後立即付款，安全可靠。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 報廢回收服務流程 -->
+    <section id="steps" class="py-5 recycle">
+      <div class="container text-center">
+        <h2 class="mb-4">收購報廢汽、機車流程</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div
+              class="p-4 border rounded d-flex align-items-center justify-content-between align-container"
+            >
+              <div>
+                <i class="fa-regular fa-circle-question custom-icon"></i>
+              </div>
+              <div>
+                <h2>來電諮詢輕鬆簡單</h2>
+                <p>不用擔心該怎麼處理，讓我們專業團隊來幫您解決。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="p-4 border rounded d-flex align-items-center justify-content-between align-container"
+            >
+              <div>
+                <i class="fa-solid fa-recycle custom-icon"></i>
+              </div>
+              <div>
+                <h2>到府回收輕鬆方便</h2>
+                <p>我們會安排拖吊車到府，輕鬆完成汽機車回收與拖吊作業。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="p-4 border rounded d-flex align-items-center justify-content-between align-container"
+            >
+              <div>
+                <i class="fa-solid fa-sack-dollar custom-icon"></i>
+              </div>
+              <div>
+                <h2>報廢車回收拿獎金</h2>
+                <p>
+                  汽機車報廢後可以申請環保署的回收獎勳金，還有現金回收，讓您輕鬆獲得獎勳與回報。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 道路救援服務流程 -->
+    <section id="steps" class="py-5 steps">
+      <div class="container text-center">
+        <h2 class="mb-4">快速道路救援服務流程</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card p-4 border-0 rounded step-card">
+              <div class="card-body">
+                <span class="card-title step-title"
+                  ><i class="fa-solid fa-tower-cell"></i
+                ></span>
+                <p class="card-text">電話聯繫，描述車輛狀況</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 border-0 rounded step-card">
+              <div class="card-body">
+                <span class="card-title step-title"
+                  ><i class="fa-solid fa-car-burst"></i
+                ></span>
+                <p class="card-text">
+                  現場檢測，確認交易<br />(一般依公里數計算)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 border-0 rounded step-card">
+              <div class="card-body">
+                <span class="card-title step-title"
+                  ><i class="fa-solid fa-truck-pickup"></i
+                ></span>
+                <p class="card-text">
+                  我們會安全、細心地幫您把故障車輛拖離現場。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="tel-button" href="tel:+88689330033"
+          >24H <i class="fa-solid fa-phone-volume"></i> 089-330033</a
+        >
+      </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <footer id="contact" class="bg-dark text-white text-center">
+      <div class="container">
+        <div class="row">
+          <!-- 第一欄 -->
+          <div class="col-md-4 d-flex flex-column gap-5 align-items-center">
+            <h3 class="fw-bold">服務項目</h3>
+            <a class="text-white" href="">收購報廢汽、機車</a>
+            <a class="text-white" href="">事故車/欠稅車</a>
+            <a class="text-white" href="">中古車/中古車零件買賣</a>
+            <a class="text-white" href="">24H道路救援</a>
+          </div>
+          <!-- 第二欄 -->
+          <div class="col-md-4 d-flex flex-column gap-4 align-items-center">
+            <h3 class="fw-bold">客服專線</h3>
+            <a href="tel:+88689330033" class="text-white"
+              ><i class="fa-solid fa-phone-volume">&nbsp;&nbsp;</i>089-330033</a
+            >
+            <h3 class="fw-bold">社交媒體</h3>
+            <a
+              href="https://www.facebook.com/profile.php?id=100092482372757"
+              class="text-white"
+              ><i class="fa-brands fa-facebook">&nbsp;&nbsp;</i>Facebook</a
+            >
+            <a
+              href="https://www.facebook.com/profile.php?id=100092482372757"
+              class="text-white"
+              ><i class="fa-brands fa-line">&nbsp;&nbsp;</i>Line</a
+            >
+            <h3>地址</h3>
+            <a
+              href="https://maps.app.goo.gl/6ULEftpreW43HNRe9"
+              class="text-white"
+              ><i class="fa-solid fa-house">&nbsp;&nbsp;</i
+              >台東市中興路四段133巷150號</a
+            >
+          </div>
+          <!-- 第三欄 -->
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <h3 class="fw-bold">
+              <i class="fa-regular fa-calendar-days"></i>營業時間：
+            </h3>
+            <table class="table text-white">
+              <tbody class="fw-bold">
+                <tr>
+                  <td>星期一～星期六：</td>
+                  <td>08：00–18：00</td>
+                </tr>
+                <tr>
+                  <td>星期日：</td>
+                  <td>休息</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14715.506924091023!2d121.0998807!3d22.7699555!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb9bb68ed3e25%3A0x7824bb33f71ed3f5!2z5rC45oW25rG96LuK55Kw5L-d5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1733927802458!5m2!1szh-TW!2stw"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                alt="台東市中興路四段133巷150號"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="copy-right text-center py-2 bg-secondary">
+        © 2024 Copyright:
+        <a
+          class="text-white"
+          href="https://www.facebook.com/profile.php?id=100092482372757"
+          >永慶汽車環保有限公司</a
+        >
+      </div>
+    </footer>
+
+    <div class="floating-btn-group">
+      <a
+        href="https://www.facebook.com/profile.php?id=100092482372757"
+        class="floating-btn"
+      >
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="#contact" class="floating-btn">
+        <i class="fa-brands fa-line"></i>
+      </a>
+      <a href="tel:+88689330033" class="floating-btn">
+        <i class="fa-solid fa-phone-volume"></i>
+      </a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
