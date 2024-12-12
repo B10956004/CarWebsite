@@ -16,7 +16,10 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
+#navbarNav {
+  font-weight: bold;
+  font-size: 1.1em;
+}
 .carousel-control-prev,
 .carousel-control-next {
   z-index: 2; /* 確保按鈕在最上層 */
