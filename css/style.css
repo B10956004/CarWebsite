@@ -63,7 +63,7 @@ a {
   max-width: 100%; /* 容器寬度最大為父元素寬度 */
   min-width: 300px; /* 最小寬度設置為300px */
   box-sizing: border-box;
-  height: 350px;
+  height: 250px;
 }
 .align-container p {
   display: flex; /* 使用 Flexbox */
@@ -149,7 +149,7 @@ h2 {
 .steps p,
 .recycle p,
 .services p {
-  font-size: x-large;
+  font-size: 1.5em;
 }
 footer {
   padding-top: 1.5rem !important;
